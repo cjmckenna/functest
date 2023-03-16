@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: keptnflaskdemo
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - keptnflaskdemo.functest-dev.svc.cluster.local
+  - keptnflaskdemo
+  http:
+  - route:
+    - destination:
+        host: keptnflaskdemo.functest-dev.svc.cluster.local
