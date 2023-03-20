@@ -1,0 +1,44 @@
+spec_version: ""
+filter: {}
+comparison:
+    compare_with: single_result
+    include_result_with_score: pass
+    number_of_comparison_results: 1
+    aggregate_function: avg
+objectives:
+    - sli: cpu
+      displayName: CPU
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: throughput_dev
+      displayName: Throughput dev
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: failure_rate_dev
+      displayName: Failure Rate dev
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time_dev
+      displayName: Response Time dev
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: errors
+      displayName: Errors
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <1.000000
+      warning: []
+      weight: 1
+      key_sli: false
+total_score:
+    pass: 90%
+    warning: 75%
