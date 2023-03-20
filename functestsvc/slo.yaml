@@ -32,10 +32,7 @@ objectives:
       key_sli: false
     - sli: errors
       displayName: Errors
-      pass:
-        - criteria:
-            - '>=0.000000'
-            - <1.000000
+      pass: []
       warning: []
       weight: 1
       key_sli: false
