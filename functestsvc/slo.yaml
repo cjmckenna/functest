@@ -32,8 +32,14 @@ objectives:
       key_sli: false
     - sli: errors
       displayName: Errors
-      pass: []
-      warning: []
+      pass:
+        - criteria:
+            - '>=-1.000000'
+            - <0.000000
+      warning:
+        - criteria:
+            - '>=-1.000000'
+            - <1.000000
       weight: 1
       key_sli: false
 total_score:
