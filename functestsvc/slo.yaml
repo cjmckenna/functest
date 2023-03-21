@@ -18,9 +18,11 @@ objectives:
       warning: []
       weight: 1
       key_sli: false
-    - sli: failure_rate_dev
-      displayName: Failure Rate dev
-      pass: []
+    - sli: failures
+      displayName: Failures
+      pass:
+        - criteria:
+            - <=0
       warning: []
       weight: 1
       key_sli: false
@@ -28,18 +30,6 @@ objectives:
       displayName: Response Time dev
       pass: []
       warning: []
-      weight: 1
-      key_sli: false
-    - sli: errors
-      displayName: Errors
-      pass:
-        - criteria:
-            - '>=-1.000000'
-            - <0.000000
-      warning:
-        - criteria:
-            - '>=-1.000000'
-            - <1.000000
       weight: 1
       key_sli: false
 total_score:
