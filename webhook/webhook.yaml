@@ -52,3 +52,15 @@ spec:
       subscriptionID: 52f645a8-23bc-4939-a789-eed52204313f
       sendFinished: true
       sendStarted: true
+    - type: sh.keptn.event.test.>
+      requests:
+        - url: https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNjU4YTgyYmMtOTBhMC00YTk0LTgzM2QtZmE1YjRjZDU0MzI3
+          payload: >-
+            {"markdown":"Test {{.time}} - {{.source}} - {{.type}}"}
+          headers:
+            - key: Content-Type
+              value: application/json
+          method: POST
+      subscriptionID: 54eb8af8-e62e-41f1-9ec6-b025e0596df9
+      sendFinished: true
+      sendStarted: true
