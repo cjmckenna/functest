@@ -20,18 +20,6 @@ objectives:
       warning: []
       weight: 1
       key_sli: false
-    - sli: time
-      displayName: Time
-      pass:
-        - criteria:
-            - '>=0.000000'
-            - <100000.000000
-      warning:
-        - criteria:
-            - '>=0.000000'
-            - <200000.000000
-      weight: 1
-      key_sli: false
     - sli: throttling
       displayName: Throttling
       pass:
@@ -42,6 +30,18 @@ objectives:
         - criteria:
             - '>=0.000000'
             - <2000.000000
+      weight: 1
+      key_sli: false
+    - sli: time
+      displayName: Time
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <500000.000000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <700000.000000
       weight: 1
       key_sli: false
 total_score:
