@@ -16,3 +16,15 @@ spec:
       subscriptionID: cbff3ae1-3c8c-4eaf-85ca-a8fd2ac90487
       sendFinished: false
       sendStarted: false
+    - type: sh.keptn.event.deployment.>
+      requests:
+        - url: https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNjU4YTgyYmMtOTBhMC00YTk0LTgzM2QtZmE1YjRjZDU0MzI3
+          payload: >-
+            {"markdown":"# Deployment {{.time}} - {{.source}} - {{.type}}"}
+          headers:
+            - key: Content-Type
+              value: application/json
+          method: POST
+      subscriptionID: 9db8c9bd-6d40-4a97-909b-24ecd4b098fc
+      sendFinished: false
+      sendStarted: false
