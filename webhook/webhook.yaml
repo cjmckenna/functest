@@ -16,18 +16,6 @@ spec:
       subscriptionID: cbff3ae1-3c8c-4eaf-85ca-a8fd2ac90487
       sendFinished: false
       sendStarted: false
-    - type: sh.keptn.event.evaluation.>
-      requests:
-        - url: https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNjU4YTgyYmMtOTBhMC00YTk0LTgzM2QtZmE1YjRjZDU0MzI3
-          payload: >-
-            {"markdown":"Evaluation {{.time}} - {{.source}} - {{.type}}"}
-          headers:
-            - key: Content-Type
-              value: application/json
-          method: POST
-      subscriptionID: 3c089cfb-432f-44ca-9b37-96fe6b6ed13b
-      sendFinished: false
-      sendStarted: false
     - type: sh.keptn.event.release.>
       requests:
         - url: https://webexapis.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svNjU4YTgyYmMtOTBhMC00YTk0LTgzM2QtZmE1YjRjZDU0MzI3
